@@ -1,42 +1,5 @@
 <?php
-/* (codigo) */  //comentar varias lineas de codigo
-/*
-$usuario = $_POST ["usuario"];
-$cliente = $_POST["cliente"];
-$ci = $_POST ["ci"];
-$fecha = $_POST["fecha"];
-$producto = $_POST["producto"];
-$descripcion = $_POST["descripcion"];
-$cantidad = $_POST["cantidad"];
-$precio_unitario = $_POST["precio_unitario"];
-$precio_total = $_POST ["precio_total"];
-*/
-
-//curl_setopt($ch, CURLOPT_POSTFIELDS, $usuario, $cliente, $fecha, $producto, $descripcion, $cantidad, $precio_unitario, $precio_total);
-
-
-
-
-/**
- * Ejemplo de como consumir para enviar un arreglo a la api
- 
-    
- * 
- */
-
-/*
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://localhost:7073/api/factura");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false); //Enabled on producction
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); //Enabled on producction
-
-*/
-	// $payload = json_encode($_REQUEST);
-	// // echo "<pre>";
-	// // print_r($payload);
-	// echo $payload;
-	// exit();
+	
 	$result = array();
 	if (isset($_REQUEST)) {
 
@@ -88,26 +51,4 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); //Enabled on producction
 
 	echo json_encode($result);
 	exit();
-
-//Es un post
-//curl_setopt($ch, CURLOPT_POST, true);
-//El arreglo a enviar a la api
-	// $payload = array (
-	 
-	// 	'prod' => 'helado', 
-	// 	'description' => 'fruta', 
-	// 	'cant' => '1', 
-	// 	'pUnit' => '2', 
-	// 	'pTotal' => '2'
-	// );
-//json_encode() //para pasar como un objecto el post
-//curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
-
-//$res = curl_exec($ch);
-//curl_close($ch);
-
-//echo $res;
-
-
-
 ?>
